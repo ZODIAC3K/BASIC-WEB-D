@@ -1,0 +1,21 @@
+*{
+    padding: 0rem;
+    margin: 0rem;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#answer{
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    width: 20rem;
+    margin-left: -0.6rem;
+}
+
+#number_keys{
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+}

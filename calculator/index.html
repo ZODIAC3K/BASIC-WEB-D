@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">
+            Calculator
+        </h1>
+        <div>
+            <form name = "form1">
+                <input type="text" name="answer" readonly ="true" id="answer"> <br>
+                <div class="number_pad">
+                    <input type = "button" id="number_keys" value = "1" onclick = "form1.answer.value += '1' ">
+                    <input type = "button" id="number_keys" value = "2" onclick = "form1.answer.value += '2' ">
+                    <input type = "button" id="number_keys" value = "3" onclick = "form1.answer.value += '3' ">             
+                    <input type = "button" id="number_keys" value = "+" onclick = "form1.answer.value += '+' ">
+                    <br>
+                    <input type = "button" id="number_keys" value = "4" onclick = "form1.answer.value += '4' ">
+                    <input type = "button" id="number_keys" value = "5" onclick = "form1.answer.value += '5' ">
+                    <input type = "button" id="number_keys" value = "6" onclick = "form1.answer.value += '6' "> 
+                    <input type = "button" id="number_keys" value = "-" onclick = "form1.answer.value += '-' ">
+                    <br>
+                    <input type = "button" id="number_keys" value = "7" onclick = "form1.answer.value += '7' ">
+                    <input type = "button" id="number_keys" value = "8" onclick = "form1.answer.value += '8' ">
+                    <input type = "button" id="number_keys" value = "9" onclick = "form1.answer.value += '9' "> 
+                    <input type = "button" id="number_keys" value = "*" onclick = "form1.answer.value += '*' ">
+                    <br>
+                    <input type = "button" id="number_keys" style="margin-left: 1.6rem;" value = "/" onclick = "form1.answer.value += '/' ">
+                    <input type = "button" id="number_keys" value = "0" onclick = "form1.answer.value += '0' ">
+                    <input type = "button" id="number_keys" value = "." onclick = "form1.answer.value += '.' ">
+                    <input type = "button" id="number_keys" value = "=" onclick = answer_check()>
+                </div>  
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
