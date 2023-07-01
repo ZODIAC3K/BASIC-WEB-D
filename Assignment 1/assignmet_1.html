@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>assignmet 1</title>
+
+
+    <link rel="stylesheet" href="assignment_1_style.css">
+</head>
+
+<body>
+
+
+    <h1><u>Merge Two Array</u></h1>
+    <div>
+        <label for="arr1">Array 1:</label>
+        <input type="text" id="arr1" required>
+        <br>
+        <label for="arr2">Array 2:</label>
+        <input type="text" id="arr2" required>
+        <br>
+        <button onclick="mergeArraysHandler()">Merge Arrays</button>
+        <div id="merge-result"></div>
+    </div>
+
+    <h1><u>First Array Elements</u></h1>
+
+    <form onsubmit="event.preventDefault(); handleFormSubmit();">
+        <label style="display: flex; flex-direction: row; width: auto;" for="ar1-input">Array 1 &nbsp; <label id="label_under_label" style="color: rgb(250, 49, 49);">[Integer Only]</label>&nbsp;:</label>
+        <input type="text" id="ar1-input" required>
+        <br>
+        <label style="display: flex; flex-direction: row; width: auto;" for="ar1-input">Array 2 &nbsp; <label id="label_under_label" style="color: rgb(250, 49, 49);">[Integer Only]</label>&nbsp;:</label>
+        <input type="text" id="ar2-input" required>
+        <br>
+        <button type="submit">Get Unique Elements</button>
+    </form>
+
+    <h4>Result:</h4>
+    <label id="result"></label>
+
+    <h1><u>Capitalize Words</u></h1>
+    <div>
+        <label for="input-string">Input String:</label>
+        <input type="text" id="input-string" required>
+        <br>
+        <button onclick="capitalizeWords()">Capitalize Words</button>
+        <div id="capitalize-result"></div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: column; justify-self: center; align-items: center;">
+        <h1><u>Weekend Date</u></h1>
+        <button  onclick="getWeekendDate()" w>Get Weekend Date</button>
+        <div id="weekend-result" style="align-self: center;"></div>
+    </div>
+    <h1><u>Calculate Age</u></h1>
+    <div>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" required>
+        <br>
+        <button onclick="calculateAge()">Calculate Age</button>
+        <div id="age-result"></div>
+    </div>
+
+    <h1><u>Add Numbers</u></h1>
+    <div>
+        <label for="number1">Number 1:</label>
+        <input type="text" id="number1" required>
+        <br>
+        <label for="number2">Number 2:</label>
+        <input type="text" id="number2" required>
+        <br>
+        <button onclick="addNumbers()">Add Numbers</button>
+        <div id="addition-result"></div>
+    </div>
+
+    <script src="assignment_1_index.js"></script>
+</body>
+
+</html>

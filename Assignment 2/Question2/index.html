@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 2</title>
+    <link rel="stylesheet" href="mian.css" />
+  </head>
+  <body>
+    <div id="main-container-quiz">
+      <h1>Quizz!</h1>
+      <form id="quizForm" onsubmit="event.preventDefault(); checkAnswers();">
+        <div class="question">
+          <p>1. What is the capital of France?</p>
+          <input type="radio" name="q1" value="a" /> a) Paris<br />
+          <input type="radio" name="q1" value="b" /> b) London<br />
+          <input type="radio" name="q1" value="c" /> c) Rome<br />
+          <input type="radio" name="q1" value="d" /> d) Madrid<br /> <br>
+          <input type="text" id="answer1" readonly />
+        </div>
+
+        <div class="question">
+          <p>2. Who painted the Mona Lisa?</p>
+          <input type="radio" name="q2" value="a" /> a) Leonardo da Vinci<br />
+          <input type="radio" name="q2" value="b" /> b) Pablo Picasso<br />
+          <input type="radio" name="q2" value="c" /> c) Vincent van Gogh<br />
+          <input type="radio" name="q2" value="d" /> d) Michelangelo<br /><br>
+          <input type="text" id="answer2" readonly />
+        </div>
+
+        <div class="question">
+          <p>3. What is the chemical symbol for gold?</p>
+          <input type="radio" name="q3" value="a" /> a) Au<br />
+          <input type="radio" name="q3" value="b" /> b) Ag<br />
+          <input type="radio" name="q3" value="c" /> c) Fe<br />
+          <input type="radio" name="q3" value="d" /> d) Cu<br /> <br>
+          <input type="text" id="answer3" readonly />
+        </div>
+
+        <div class="question">
+          <p>4. Which planet is known as the Red Planet?</p>
+          <input type="radio" name="q4" value="a" /> a) Mars<br />
+          <input type="radio" name="q4" value="b" /> b) Jupiter<br />
+          <input type="radio" name="q4" value="c" /> c) Venus<br />
+          <input type="radio" name="q4" value="d" /> d) Saturn<br /> <br>
+          <input type="text" id="answer4" readonly />
+        </div>
+
+        <div class="question">
+          <p>5. Who wrote the play "Romeo and Juliet"?</p>
+          <input type="radio" name="q5" value="a" /> a) William Shakespeare<br />
+          <input type="radio" name="q5" value="b" /> b) Jane Austen<br />
+          <input type="radio" name="q5" value="c" /> c) Mark Twain<br />
+          <input type="radio" name="q5" value="d" /> d) Charles Dickens<br /> <br>
+          <input type="text" id="answer5" readonly />
+        </div>
+        <br> 
+        <button id="my_button" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
