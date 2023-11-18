@@ -47,6 +47,10 @@ function validateForm(event) {
         return;
     }
 
+    var successElement = document.getElementById('error-data');
+    successElement.style.color = 'green';
+    successElement.innerHTML = "Form submitted!";
+
     // Form is valid, submit the form or perform further actions
     console.log("Form submitted!");
 }

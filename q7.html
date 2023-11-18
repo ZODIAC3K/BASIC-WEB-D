@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add and Remove Elements from Array</title>
+</head>
+<body>
+  <h1>Add and Remove Elements from Array</h1>
+  
+  <p>Array: <span id="arrayDisplay"></span></p>
+  <p>
+    <label>Add Element:</label>
+    <input type="text" id="addElementInput">
+    <button onclick="addElement()">Add</button>
+  </p>
+  <p>
+    <label>Remove Element:</label>
+    <input type="text" id="removeElementInput">
+    <button onclick="removeElement()">Remove</button>
+  </p>
+
+  <script>
+    // Initialize an empty array
+    let myArray = [];
+
+    function displayArray() {
+      const arrayDisplay = document.getElementById("arrayDisplay");
+      if (myArray.length === 0) {
+        arrayDisplay.innerText = "Array is empty";
+      } else {
+        arrayDisplay.innerText = "[" + myArray.join(", ") + "]";
+      }
+    }
+
+    function addElement() {
+      const addElementInput = document.getElementById("addElementInput");
+      const elementsToAdd = addElementInput.value.trim().split(/[ ,]+/);
+
+      for (const element of elementsToAdd) {
+        if (element !== "") {
+          myArray.push(element);
+        }
+      }
+
+      displayArray();
+      addElementInput.value = "";
+    }
+
+    function removeElement() {
+      const removeElementInput = document.getElementById("removeElementInput");
+      const elementsToRemove = removeElementInput.value.trim().split(/[ ,]+/);
+
+      for (const element of elementsToRemove) {
+        const indexToRemove = myArray.indexOf(element);
+        if (indexToRemove !== -1) {
+          myArray.splice(indexToRemove, 1);
+        }
+      }
+
+      displayArray();
+      removeElementInput.value = "";
+    }
+
+    displayArray(); // Display the initial empty array
+  </script>
+</body>
+</html>
